@@ -42,6 +42,8 @@ while ($donnees = $reponse->fetch())
         <strong>Le nom est</strong> : <?php echo $donnees['nom']; ?><br />
         <strong>L'email est</strong> : <?php echo $donnees['email']; ?><br />
         <strong>La date de naissance est</strong> : <?php echo $donnees['date_de_naissance']; ?><br />
+        <a href="admin_users.php?m=edit&id=<?php echo $donnees['id_utilisateur']; ?>">Edit</a> |
+        <a href="admin_users.php?m=delete&id=<?php echo $donnees['id_utilisateur']; ?>">Supprimer</a>
     </p>
     <?php
 }
