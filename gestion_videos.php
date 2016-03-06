@@ -36,8 +36,8 @@ while ($donnees = $reponse->fetch())
         <strong>La description est</strong> : <?php echo $donnees['description'];?><br />
         <strong>La vidéo est</strong> : <?php echo $donnees['video'];?><br />
         <strong>La date d'upload est</strong> : <?php echo $donnees['date'];?><br />
-        <a href="">Modifier</a><br />
-        <a href="delete_video.php">Supprimer</a>
+        <a href="#?id=<?php echo $donnees['id_video']; ?>">Modifier</a><br />
+        <a href="delete_video.php?id=<?php echo $donnees['id_video']; ?>">Supprimer</a>
     </p>
     <?php
 }
