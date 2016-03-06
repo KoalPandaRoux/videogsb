@@ -21,17 +21,18 @@ class VideoManager
 		$tableau = array();
 		$compteur = 0;
 		$resultat = $this->base->query('SELECT * FROM video order by Date DESC');// requete sqk qui séléctionne toutes les vidéos et les trie par date dans l'odre décroissant
-		//fetch sur chaque ligne ramenée par la requête
+		
+		//Liste des lignes
 		while ($ligne = $resultat->fetch())
 		   {
 			$video = new Video();
-		    $video->setIdVideo($ligne['id_video']);
-		    //$video->setIdGenre($ligne['id_genre']);
+			$video->setIdVideo($ligne['id_video']);
 			$video->setTitre($ligne['titre']);
 			$video->setDescription($ligne['description']);
 			$video->setDate($ligne['date']);
 			$video->setVideo($ligne['video']);
-			$tableau[$compteur] = $video; //stockage de l'objet dans le tableau
+			//Stockage de l'objet dans le tableau
+			$tableau[$compteur] = $video; 
 			$compteur++;
 		    }
 			return $tableau;
@@ -47,8 +48,6 @@ class VideoManager
 		$identifiant = $this->base->lastInsertId();
 		return $identifiant;
 	}
-
-
 
 	//fonction qui permet de supprimer les vidéos
 	public function deleteVideo($id_video){
