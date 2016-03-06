@@ -1,0 +1,83 @@
+/***CSS WRITE BY CHESNAIS-BORDES LOUIS***/
+
+/*------------------*\
+$STYLE GENERIQUE
+\*------------------*/
+body, html{
+	font-family: 'Roboto', arial, sans-serif;
+	overflow-x: hidden;
+}
+
+a{
+	text-decoration: none;
+
+}
+
+table{
+	text-align: center;
+	display: flex;
+	justify-content: center;
+}
+
+li{
+	list-style: none;
+	display: inline-block;
+	margin: 20px;
+
+}
+
+ul{
+	padding-left: 0;
+}
+
+h1{
+	text-align: center;
+	text-transform: uppercase;
+	padding-top: 100px;
+	font-family:'Oswald';
+}
+
+h2{
+	text-align: center;
+	padding-top: 80px;
+	padding-bottom: 20px;
+	font-weight: normal;
+	color: #123e67;
+	font-family:'Oswald';
+}
+p{
+	letter-spacing: 1px;
+	padding-bottom: 10px;
+	text-align: center;
+}
+
+::-moz-selection {
+    background: #123e67;
+    color: #FFF;
+}
+::selection {
+    background: #123e67;
+    color: #FFF;
+}
+
+form{
+	text-align: center;
+}
+
+input{
+	margin: 15px;
+	padding-left: 20px;
+	width: 400px;
+	height: 50px;
+	border:none;
+	border: 3px solid #e5e5e5;
+}
+
+td 
+{
+    border: 1px solid #000; 
+}
+
+input:hover{
+	border: solid 3px #67a4d3;
+}
