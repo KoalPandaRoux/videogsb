@@ -10,9 +10,12 @@ if (controlAdmin(	$_SESSION['type_utilisateur']) == TRUE)
 {}
 else{header('Location: error/404.php');}
 
+// Si l'ID existe dans l'URL et qu'il n'est pas vide alors on le transforme en
+// entier, sinon on le set à 0
+$id_video = (!empty($_GET['id']) ? intval($_GET['id']) : 0);
+// Instanciation de notre class
 $VideoManager = new VideoManager($bdd);
-//création d'un objet Video avec les valeurs de ses attributs complétées par celles reçues par $_POST
-$id_video = new Video();
+// Puis on supprime la video
 $identifiant = $VideoManager->deleteVideo($id_video);
 
 if ($identifiant != 0)
