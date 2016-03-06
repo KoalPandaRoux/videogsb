@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 class VideoManager
 {
@@ -6,8 +6,8 @@ class VideoManager
 	private $base;
 
 	public function __construct($base)
-	{	
-		
+	{
+
 		$this->setDb($base);
 	}
 
@@ -21,8 +21,8 @@ class VideoManager
 		$tableau = array();
 		$compteur = 0;
 		$resultat = $this->base->query('SELECT * FROM video order by Date DESC');// requete sqk qui séléctionne toutes les vidéos et les trie par date dans l'odre décroissant
-		//fetch sur chaque ligne ramenée par la requête	
-		while ($ligne = $resultat->fetch()) 
+		//fetch sur chaque ligne ramenée par la requête
+		while ($ligne = $resultat->fetch())
 		   {
 			$video = new Video();
 		    $video->setIdVideo($ligne['id_video']);
@@ -33,8 +33,8 @@ class VideoManager
 			$video->setVideo($ligne['video']);
 			$tableau[$compteur] = $video; //stockage de l'objet dans le tableau
 			$compteur++;
-		    }   
-			return $tableau;	
+		    }
+			return $tableau;
 	}
 
 	//fonction qui insert les videos
@@ -51,11 +51,11 @@ class VideoManager
 
 
 	//fonction qui permet de supprimer les vidéos
-	public function deleteVideo(Video $id_video){
-		var_dump($id_video);
-		$sql = "DELETE FROM video WHERE id_video";
+	public function deleteVideo($id_video){
+		if ($id_video <= 0){ return 0; }
+		$sql = "DELETE FROM video WHERE id_video=".$id_video;
 		echo $sql;
-		$this->base->exec($sql);
+		return $this->base->exec($sql);
 	}
 
 }
