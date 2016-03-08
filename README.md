@@ -43,6 +43,8 @@ http://louischesnaisbordes.wix.com/blog#!application-gsb-video/c1axe
  - Google Drive
  - WampServer 3.0
  - PHPstorm
+ - WebStorm
+ - Netbeans
  - Sublime Text 3
 
 ### Licence
