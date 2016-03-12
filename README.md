@@ -4,7 +4,7 @@
 GSB Vidéo est une application réalisé dans le cadre du BTS service informatique aux organisations option solutions logicielles application métiers.  
 
 ### Version
-v0.2
+v0.3
 
 ### Technologies
 - HTML5/CSS
