@@ -1,4 +1,4 @@
-# Galaxy Swiss Bourdin - Vidéo 
+# Galaxy Swiss Bourdin - Vidéo
 
 ### Le projet
 GSB Vidéo est une application réalisé dans le cadre du BTS service informatique aux organisations option solutions logicielles application métiers.  
@@ -16,9 +16,9 @@ v0.3
  - Install wampserver 3.0
  - Place the files in the wamp64/www/"my file"
  - Create in MySQL the table "video-gsb"
- - Open folder sql and import the file in MySQL 
+ - Open folder sql and import the file in MySQL
 
-### Le besoin 
+### Le besoin
 La direction des services commerciaux à fait une demande pour une application, qui aura pour but d’aider les visiteurs commerciaux lors de leur présentation matériels aux potentiels clients.
 
 ### Contexte
@@ -36,7 +36,7 @@ http://louischesnaisbordes.wix.com/blog#!application-gsb-video/c1axe
 
 ### Collaborateurs
  - Louis Chesnais-Bordes (KoalPandaRoux)
- - Robin Guinant (Fooxh)
+ - Robin Guinant (Foohx)
 
 ### Outils
  - Github
@@ -52,9 +52,3 @@ MIT
 
 
 **APPLICATION GSB VIDEO POUR L'EPREUVE E4 DU BTS SIO**
-
-
-
-
-
-
